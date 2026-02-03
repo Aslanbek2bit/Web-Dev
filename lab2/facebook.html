@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c1e21;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    max-width: 1000px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h1 {
+    color: #1877f2;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 22px;
+    color: #1c1e21;
+}
+
+.right {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.right-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.right input {
+    padding: 14px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.unk {
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.abc {
+    text-align: center;
+    margin: 12px 0;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+.abc:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.signup {
+    background-color: #42b72a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+    background-color: #338822;
+}
+
+.create-page {
+    font-size: 12px;
+    color: #1c1e21;
+    text-align: center;
+    max-width: 360px;
+}
+
+.footer {
+    width: 100%;
+    background: #fff;
+    margin-top: auto;
+    padding: 20px 0 28px;
+    font-size: 12px;
+    color: #8a8d91;
+}
+
+.footer-languages,
+.footer-links {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding: 0 20px;
+}
+
+.footer-languages {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-languages span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 20px;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    background: #f5f6f7;
+    color: #4b4f56;
+    font-size: 14px;
+}
+
+.footer-meta {
+    max-width: 980px;
+    margin: 10px auto 0;
+    padding: 0 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>
+                Facebook помогает вам всегда оставаться на связи
+                и общаться со своими знакомыми.
+            </p>
+        </div>
+
+        <div class="right-wrap">
+            <div class="right">
+                <input type="text" placeholder="Электронный адрес или номер телефона">
+                <input type="password" placeholder="Пароль">
+
+                <a href="https://wikipedia.com" class="unk"> Вход  </a>
+                <a href="#" class="abc">Забыли пароль?</a>
+
+                <hr>
+
+                <button class="signup">Создать новый аккаунт</button>
+            </div>
+            <p class="create-page"><strong>Создать Страницу</strong> знаменитости, музыкальной группы или компании.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-languages">
+            <a href="#">Русский</a>
+            <a href="#">Қазақша</a>
+            <a href="#">English (US)</a>
+            <a href="#">Türkçe</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">한국어</a>
+            <a href="#">Shqip</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <span>+</span>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Зарегистрироваться</a>
+            <a href="#">Вход</a>
+            <a href="#">Messenger</a>
+            <a href="#">Facebook Lite</a>
+            <a href="#">Видео</a>
+            <a href="#">Meta Pay</a>
+            <a href="#">Магазин Meta</a>
+            <a href="#">Meta Quest</a>
+            <a href="#">Ray-Ban Meta</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Instagram</a>
+            <a href="#">Threads</a>
+            <a href="#">Центр информации о выборах</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Центр конфиденциальности</a>
+            <a href="#">Информация</a>
+            <a href="#">Создать рекламу</a>
+            <a href="#">Создать Страницу</a>
+            <a href="#">Разработчикам</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Файлы cookie</a>
+            <a href="#">Рекламные предпочтения</a>
+            <a href="#">Условия использования</a>
+            <a href="#">Справка</a>
+            <a href="#">Загрузка контактов и лиц, не являющихся пользователями</a>
+        </div>
+
+        <div class="footer-meta">Meta © 2026</div>
+    </footer>
+
+</body>
+</html>
