@@ -1,0 +1,28 @@
+<h2>Album Detail</h2>
+
+<p *ngIf="loading">Loading album...</p>
+
+<div *ngIf="!loading && album">
+  <p><strong>ID:</strong> {{ album.id }}</p>
+  <p><strong>User ID:</strong> {{ album.userId }}</p>
+
+  <label for="title"><strong>Title:</strong></label>
+  <br />
+  <input
+    id="title"
+    [(ngModel)]="album.title"
+    style="width: 100%; max-width: 500px; padding: 8px; margin: 8px 0 12px;"
+  />
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap;">
+    <button (click)="save()">Save</button>
+    <a [routerLink]="['/albums', album.id, 'photos']">
+      <button type="button">View Photos</button>
+    </a>
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
+
+<div *ngIf="!loading && !album">
+  <p>Album not found.</p>
+</div>

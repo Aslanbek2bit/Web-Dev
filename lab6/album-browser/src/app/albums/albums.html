@@ -1,0 +1,20 @@
+<h2>Albums</h2>
+
+<p *ngIf="loading">Loading albums...</p>
+
+<div *ngIf="!loading && albums.length === 0">
+  <p>No albums found.</p>
+</div>
+
+<ul *ngIf="!loading && albums.length > 0" style="list-style: none; padding: 0;">
+  <li
+    *ngFor="let album of albums"
+    style="display:flex; justify-content:space-between; gap:10px; padding:10px; border:1px solid #ddd; margin-bottom:8px; border-radius:8px;"
+  >
+    <span (click)="openAlbum(album.id)" style="cursor:pointer; flex:1;">
+      <strong>#{{ album.id }}</strong> — {{ album.title }}
+    </span>
+
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>

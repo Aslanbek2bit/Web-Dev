@@ -1,0 +1,18 @@
+<h2>Album {{ albumId }} Photos</h2>
+
+<p *ngIf="loading">Loading photos...</p>
+
+<div *ngIf="!loading && photos.length === 0">
+  <p>No photos found.</p>
+</div>
+
+<div *ngIf="!loading && photos.length > 0" class="photo-grid">
+  <div class="photo-card" *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+
+<div style="margin-top: 16px;">
+  <button (click)="goBack()">Back</button>
+</div>

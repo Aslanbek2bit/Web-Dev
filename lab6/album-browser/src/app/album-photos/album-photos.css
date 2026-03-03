@@ -1,0 +1,25 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.photo-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fff;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.photo-card p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
